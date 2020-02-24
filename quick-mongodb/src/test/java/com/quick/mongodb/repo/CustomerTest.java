@@ -43,7 +43,10 @@ public class CustomerTest {
 
         //条件匹配器
         Customer customer = new Customer();
+        //查询的值
         customer.setFirstName("vector");
+        //customer.setLastName("wang");
+        //设置匹配方式
         ExampleMatcher exampleMatcher = ExampleMatcher.matching()
                 .withMatcher("firstName",ExampleMatcher.GenericPropertyMatchers.contains())
                 .withMatcher("lastName",ExampleMatcher.GenericPropertyMatchers.contains());
